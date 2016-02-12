@@ -31,7 +31,7 @@ PRODUCT_COPY_FILES += \
 
 # Boot ramdisk setup
 PRODUCT_PACKAGES += \
-    fstab.htc7x30 \
+    fstab.qcom \
     init.target.rc
 
 # Audio DSP Profiles
