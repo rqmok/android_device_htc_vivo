@@ -33,7 +33,7 @@
 
 TARGET_BOOTLOADER_BOARD_NAME := vivo
 
-BOARD_KERNEL_CMDLINE := no_console_suspend=1  androidboot.selinux=permissive androidboot.hardware=qcom
+BOARD_KERNEL_CMDLINE := no_console_suspend=1  androidboot.selinux=permissive androidboot.hardware=htc7x30
 BOARD_KERNEL_RECOVERY_CMDLINE := $(BOARD_KERNEL_CMDLINE) msmsdcc_power_gpio=88
 BOARD_KERNEL_BASE := 0x04400000
 BOARD_KERNEL_PAGE_SIZE := 4096
@@ -49,7 +49,7 @@ TARGET_KERNEL_CONFIG := vivo_defconfig
 # Recovery
 TARGET_RECOVERY_DEVICE_DIRS += device/htc/vivo
 
-TARGET_RECOVERY_FSTAB := device/htc/vivo/rootdir/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/htc/vivo/rootdir/fstab.htc7x30
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 BOARD_HAS_NO_SELECT_BUTTON := true
 
