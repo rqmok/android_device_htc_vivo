@@ -14,7 +14,7 @@
 # limitations under the License.
 
 VENDOR=htc
-DEVICE=primou
+DEVICE=vivo
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 

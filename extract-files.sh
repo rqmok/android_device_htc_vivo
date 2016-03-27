@@ -14,7 +14,7 @@
 # limitations under the License.
 
 VENDOR=htc
-BOARD=primou
+BOARD=vivo
 
 BASE=../../../vendor/$VENDOR/$BOARD/proprietary
 

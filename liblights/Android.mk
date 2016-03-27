@@ -19,7 +19,7 @@ ifeq ($(BOARD_VENDOR),htc)
 include $(CLEAR_VARS)
 
 
-LOCAL_MODULE := lights.primou
+LOCAL_MODULE := lights.vivo
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 
@@ -31,7 +31,7 @@ LOCAL_PRELINK_MODULE := false
 
 LOCAL_MODULE_TAGS := optional
 
-ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),vivow)
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),vivo)
 	LOCAL_CFLAGS += -DROTATING_SOFTKEYS
 endif
 
