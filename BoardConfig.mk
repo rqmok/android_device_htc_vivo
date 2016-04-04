@@ -29,6 +29,11 @@ BOARD_VOLD_MAX_PARTITIONS := 36
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/vivo/bluetooth
 BOARD_BLUEDROID_VENDOR_CONF := device/htc/vivo/bluetooth/libbt_vndcfg.txt
 
+# Camera
+BOARD_HAVE_HTC_FFC := true
+BOARD_USE_REVERSE_FFC := true
+USE_CAMERA_STUB := true
+
 # Recovery
 TARGET_RECOVERY_FSTAB = device/htc/msm7x30-common/rootdir/fstab.qcom
 RECOVERY_FSTAB_VERSION := 2
