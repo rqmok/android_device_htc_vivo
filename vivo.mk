@@ -105,7 +105,8 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329
 
 # BCM4329 firmware
 PRODUCT_COPY_FILES += \
-	$(COMMON_PATH)/rootdir/system/vendor/firmware/bcm4329.hcd:system/vendor/firmware/bcm4329.hcd
+	$(COMMON_PATH)/rootdir/system/vendor/firmware/bcm4329.hcd:system/vendor/firmware/bcm4329.hcd \
+	$(COMMON_PATH)/bluetooth/bt_vendor.conf:system/etc/bt_vendor.conf
 
 # Lights / Sensors / Bluetooth
 PRODUCT_PACKAGES += \
