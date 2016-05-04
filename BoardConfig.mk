@@ -35,19 +35,22 @@ BOARD_USE_REVERSE_FFC := true
 USE_CAMERA_STUB := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB = device/htc/msm7x30-common/rootdir/fstab.qcom
 RECOVERY_FSTAB_VERSION := 2
+TARGET_RECOVERY_FSTAB = device/htc/msm7x30-common/rootdir/fstab.qcom
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_RECOVERY_DEVICE_DIRS += device/htc/vivo
 
 # Charge mode
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/htc_lpm/lpm_mode
 
 # TWRP
-#RECOVERY_VARIANT := twrp
 TW_THEME := portrait_mdpi
-#RECOVERY_GRAPHICS_USE_LINELENGTH := true
-TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_INCLUDE_CRYPTO := true
-#TW_USE_TOOLBOX := true
-#TW_NO_SCREEN_BLANK := true
-#TW_NO_CPU_TEMP := true
 TARGET_RECOVERY_DEVICE_MODULES := chargeled
+TW_NO_SCREEN_BLANK := true
+TW_INCLUDE_DUMLOCK := true
+TW_NO_USB_STORAGE := true
+TW_NO_CPU_TEMP := true
+TW_NEW_ION_HEAP := true
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
