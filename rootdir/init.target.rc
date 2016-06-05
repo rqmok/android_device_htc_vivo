@@ -1,5 +1,5 @@
 on boot
-    # S2W extras for primou
+    # S2W extras for vivo
     chown root system /sys/android_touch/s2w_allow_stroke
     chmod 0664 /sys/android_touch/s2w_allow_stroke
     chown root system /sys/android_touch/s2w_min_distance
