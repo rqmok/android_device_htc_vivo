@@ -36,7 +36,7 @@ USE_CAMERA_STUB := true
 
 # Recovery
 RECOVERY_FSTAB_VERSION := 2
-TARGET_RECOVERY_FSTAB = device/htc/msm7x30-common/rootdir/fstab.qcom
+TARGET_RECOVERY_FSTAB = device/htc/vivo/rootdir/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_DEVICE_DIRS += device/htc/vivo
 

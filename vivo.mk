@@ -24,7 +24,9 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/vivo/overlay
 COMMON_PATH := device/htc/vivo
 
 # Boot ramdisk setup
-PRODUCT_PACKAGES += init.target.rc
+PRODUCT_PACKAGES += \
+	fstab.qcom \
+	init.target.rc
 
 # Audio DSP Profiles
 PRODUCT_COPY_FILES += \
