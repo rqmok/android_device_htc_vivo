@@ -1,10 +1,6 @@
-# mount point	fstype		device												options
-/recovery		emmc		/dev/block/platform/msm_sdcc.2/by-name/recovery
-/boot			emmc		/dev/block/platform/msm_sdcc.2/by-name/boot
-/cache			ext4		/dev/block/platform/msm_sdcc.2/by-name/cache
-/data			ext4		/dev/block/platform/msm_sdcc.2/by-name/userdata		length=-16384
-/sdcard			vfat		/dev/block/mmcblk1p1								flags=display="MicroSD";storage;wipeingui;removable
-/system			ext4		/dev/block/platform/msm_sdcc.2/by-name/system
-/misc			emmc		/dev/block/platform/msm_sdcc.2/by-name/misc
-/devlog			ext4		/dev/block/platform/msm_sdcc.2/by-name/devlog
-/emmc			vfat		/dev/block/platform/msm_sdcc.2/by-name/fat			flags=display="Internal Storage";storage
+# mount point  fstype          device
+/recovery   emmc        /dev/block/mmcblk0p21
+/boot       emmc        /dev/block/mmcblk0p22
+/cache      ext4        /dev/block/mmcblk0p27
+/data       ext4        /dev/block/mmcblk1p1    length=-16384
+/system     ext4        /dev/block/mmcblk0p26
