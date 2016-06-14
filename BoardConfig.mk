@@ -45,9 +45,6 @@ TARGET_RECOVERY_DEVICE_DIRS += device/htc/vivo
 # Charge mode
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/htc_lpm/lpm_mode
 
-# Dex-Preoptimisation
-USE_DEXPREOPT := true
-
 # TWRP
 TW_THEME := portrait_mdpi
 RECOVERY_SDCARD_ON_DATA := true
@@ -62,3 +59,10 @@ TW_NO_USB_STORAGE := true
 TW_NO_CPU_TEMP := true
 TW_NEW_ION_HEAP := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+
+# Enable dex-preoptimization to speed up first boot sequence
+ifeq ($(HOST_OS),linux)
+ifeq ($(WITH_DEXPREOPT),)
+	WITH_DEXPREOPT := true
+endif
+endif
